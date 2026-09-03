@@ -63,15 +63,6 @@ Create `vite-project/server/.env` from the example file:
 Copy-Item server/.env.example server/.env
 ```
 
-Update the values in `server/.env`:
-
-```env
-DATABASE_URL=postgresql://username:password@localhost:5432/spendwise
-JWT_SECRET=replace-with-a-long-random-secret
-PORT=4000
-CLIENT_URL=http://localhost:5173
-```
-
 The PostgreSQL database must exist before setup runs. The schema creates the `users`, `expenses`, `income`, and `budgets` tables.
 
 ### 3. Initialize the database
